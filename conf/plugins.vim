@@ -25,7 +25,7 @@ Bundle 'Wombat'
 filetype plugin indent on
 
 " TagBar
-let g:tagbar_ctags_bin='/usr/local/Cellar/ctags/5.8/bin/ctags'
+let g:tagbar_autofocus=1
 
 " CTRL-P
 "let g:ctrlp_working_path_mode = 0

@@ -20,8 +20,8 @@ if has("mac") || has("macunix")
     set shell=/bin/bash
 elseif has("win16") || has("win32")
     set gfn=Bitstream\ Vera\ Sans\ Mono:h10
-elseif has("linux")
-    set gfn=Monospace\ 10
+elseif has("unix")
+    set gfn=Consolas\ 12
     set shell=/bin/bash
 endif
 
