@@ -11,7 +11,7 @@ set relativenumber
 set cursorline
 
 " Hide gui menu & 'maximize'
-if has("gui_running")
+if has("gui_running") && has("unix")
     set guioptions-=m
     set lines=999 columns=999
 endif

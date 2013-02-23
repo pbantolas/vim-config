@@ -21,6 +21,7 @@ Bundle 'a.vim'
 " Let's try this...
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Wombat'
+Bundle 'AutoClose'
 
 filetype plugin indent on
 
