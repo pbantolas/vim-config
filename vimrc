@@ -4,6 +4,15 @@ source ~/.vim/conf/plugins.vim
 
 colorscheme molokai
 
+" Learn the hard way
+imap <Left> <NOP>
+imap <Right> <NOP>
+imap <Up> <NOP>
+imap <Down> <NOP>
+
+" default clipboard system
+set clipboard=unnamed
+
 " My own
 nnoremap ; :
 set pastetoggle=<F2>
