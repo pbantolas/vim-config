@@ -22,6 +22,7 @@ Bundle 'a.vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Wombat'
 Bundle 'Raimondi/delimitMate'
+Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on
 
