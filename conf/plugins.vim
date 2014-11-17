@@ -1,29 +1,30 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'CSApprox'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'kchmck/vim-coffee-script'
-"Bundle "pangloss/vim-javascript"
-Bundle 'JavaScript-syntax'
-Bundle 'majutsushi/tagbar'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-surround'
-Bundle 'kien/ctrlp.vim'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'OmniCppComplete'
-Bundle 'a.vim'
+Plugin 'CSApprox'
+Plugin 'bling/vim-airline'
+"Plugin "pangloss/vim-javascript"
+Plugin 'JavaScript-syntax'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Emmet.vim'
 " Let's try this...
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'Wombat'
-Bundle 'Raimondi/delimitMate'
-Bundle 'scrooloose/syntastic'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Wombat'
+Plugin 'Raimondi/delimitMate'
+Plugin 'whatyouhide/vim-gotham'
+Plugin 'Lokaltog/vim-easymotion'
 
+call vundle#end()
 filetype plugin indent on
 
 " TagBar
@@ -44,3 +45,6 @@ let delimitMate_expand_cr=1
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = $HOME.'/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion = 1
+
+" NERDTree
+nmap <leader>nn :NERDTreeToggle<cr>

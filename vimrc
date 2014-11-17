@@ -1,8 +1,9 @@
 source ~/.vim/conf/basic.vim
-source ~/.vim/conf/extended.vim
+"source ~/.vim/conf/extended.vim
 source ~/.vim/conf/plugins.vim
 
-colorscheme molokai
+"colorscheme molokai
+color gotham256
 
 " Learn the hard way
 imap <Left> <NOP>
@@ -18,15 +19,29 @@ nnoremap ; :
 set pastetoggle=<F2>
 nmap <F8> :TagbarToggle<CR>
 
-set relativenumber
+" set blade templates to html filetype
+au BufNewFile,BufRead *.blade.php set ft=html
+
+" disable left scrollbar
+set go-=L
+
+set number
 set cursorline
 
+" NERDTree shortcut
+nmap <C-n> :NERDTreeToggle<cr>
+
 " Hide gui menu & 'maximize'
-if has("gui_running") && !has("macunix")
+if has("gui_running")
     set guioptions-=m
-    set lines=999 columns=999
+    "set gfn=Consolas\ 12
+    set gfn=Ubuntu\ Mono\ 12
 endif
 
-autocmd! BufNewFile * silent! 0r ~/.vim/template/tmp.%:e
-
 au FocusLost * :wa
+
+" enable wrap indenation
+set breakindent
+
+" set text-wrapping for git commit messages
+au BufRead,BufNewFile commit-msg.txt setlocal textwidth=72
